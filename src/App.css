@@ -1,0 +1,804 @@
+
+/* header */
+
+.back-img{
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  padding: 0 16px;
+  transition: all 300ms linear;
+  box-shadow: 0 10px 30px -12px rgb(0 0 0 / 42%), 0 4px 25px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
+}
+.back-img::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.dadd{
+  background-image: none!important;
+}
+/* .shro{
+  line-height: 0px!important;
+  transform: translate3d(-20px, 0px, 0px)!important;
+  opacity: 0!important;
+} */
+.sd1::before{
+  background: #000000c6;
+}
+.sd2::before{
+  background: #6c757db0;
+}
+.sd3::before{
+  background: #4fa7466b;
+}
+.sd4::before{
+  background: #f2c01066;
+}
+.fono{
+  font-size: 20px;
+  padding: 12px 0;
+  position: relative;
+  line-height: 5px;
+}
+.fono::after{
+  content: "";
+  background: #fff;
+  position: absolute;
+  height: 1px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.back-img ul{
+  list-style: none;
+  padding: 20px 0 0;
+  margin: 0;
+}
+.back-img ul li a,
+.back-img ul .coll{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+  line-height: 5px;
+}
+.back-img ul li .act{
+  background: #23bad2;
+}
+.back-img ul li .act1{
+  background: #3f8838;
+}
+.back-img ul li .act2{
+  background: #c82733;
+}
+.back-img ul li .act3{
+  background: #e0a814;
+}
+.back-img ul li .act4{
+  background: #325de2;
+}
+.back-img ul li .act5{
+  background: #23272b;
+}
+.back-img ul li a svg,
+.back-img ul .coll svg{
+  font-size: 24px;
+  margin-right: 12px;
+}
+.back-img ul .coll:hover,
+.coll1{
+  background: #767c7d80;
+}
+.arow{
+  position: absolute;
+  top: 20px;
+  right: 0;
+  font-size: 12px!important;
+  transition: all 150ms ease-in;
+}
+.coll[aria-expanded="false"] .arow{
+  transform: rotate(180deg);
+}
+.head-check{
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 12px;
+  box-shadow: 0px 2px 8px 2px #b9b7b7b8;
+  outline: none!important;
+}
+.head-check svg{
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+.head-check svg path{
+  fill: #5cbbd2;
+}
+.head-name{
+  margin-left: 24px;
+  font-size: 20px;
+  color: #777;
+}
+.hds{
+  float: right;
+  font-size: 20px;
+}
+.hds .icos{
+  margin-right: 16px;
+  color: #777;
+}
+.rot{
+  display: inline-block;
+  transition: all 300ms linear;
+}
+.dropdown.menu{
+  position: fixed;
+  right: 0;
+  top: 200px;
+  z-index: 9;
+}
+.dropdown.menu .shd{
+  box-shadow: -2px 0px 6px 1px rgb(111 112 113 / 50%);
+  font-size: 24px;
+  line-height: 20px;
+  background: #80828487;
+  border: none;
+}
+.dropdown.menu .dropdown-menu{
+  transform: translate3d(-325px, -62px, 0)!important;
+  padding: 12px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+  width: 300px;
+}
+.dropdown.menu .dropdown-menu::after{
+  content: '';
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 16px solid #fff;
+  position: absolute;
+  right: -16px;
+  top: 25px;
+}
+.dropdown.menu .dropdown-menu::before{
+  content: '';
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  border-left: 16px solid #bbb;
+  position: absolute;
+  right: -17px;
+  top: 25px;
+}
+.fillo{
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  border-bottom: 1px solid #bbbbbb;
+  padding-bottom: 8px;
+}
+.fillo button{
+  border-radius: 20px;
+  padding: 10px;
+}
+.fillo2{
+  font-size: 12px;
+  border-bottom: 1px solid #bbbbbb;
+  padding-bottom: 8px;
+}
+.flodi{
+  line-height: 12px;
+  float: right;
+}
+.btnd{
+  border-radius: 20px!important;
+  position: relative;
+  box-shadow: none!important;
+  width: 36px;
+  height: 20px;
+  border: none;
+  outline: none!important;
+}
+.btnd1{
+  background-color: #828282!important;
+}
+.btnd2{
+  background-color: #379eda!important;
+}
+.btnd .handle{
+  height: 16px;
+  width: 16px;
+  border-radius: 20px;
+  background: #fff;
+  position: absolute;
+  top: 1.5px;
+  box-shadow: 0 0 3px 1px #828282;
+}
+.btnd .handle1{
+  left: 2px;
+}
+.btnd .handle2{
+  left: 18px;
+}
+.imgt button{
+  padding: 0;
+  border: none;
+  outline: none!important;
+  margin: 0 6px;
+}
+.imgt button img{
+  width: 50px;
+  height: 125px;
+  border-radius: 10px;
+}
+@media only screen and (min-width: 991px){
+  .back-img:hover {
+    width: 280px!important;
+  }
+  .back-img:hover .rot {
+    opacity: 1!important;
+    transform: translate3d(0px, 0px, 0px)!important;
+  }
+  .back-img:hover ul .coll svg {
+    opacity: 1!important;
+  }
+}
+@media only screen and (max-width: 767px){
+  .back-img {
+    width: 60px!important;
+    padding: 0 8px;
+  }
+  .back-img ul li a svg,
+  .back-img ul .coll svg {
+    font-size: 16px;
+  }
+  .back-img ul li a,
+  .back-img ul .coll {
+    padding: 10px 14px;
+  }
+  .fono {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+  .rot {
+    line-height: 0px!important;
+    transform: translate3d(-20px, 0px, 0px);
+    opacity: 0;
+  }
+  .back-img ul .coll .arow {
+    opacity: 0;
+  }
+}
+
+/* header */
+
+/* dashboard */
+
+.afterhead{
+  display: inline-block;
+  transition: all 300ms linear;
+}
+.map svg{
+  stroke: #fff;
+}
+.map svg path{
+  outline: none;
+  cursor: pointer;
+  fill: #bbbbbb;
+  fill-rule: evenodd;
+}
+.map svg path:hover{
+  fill: rgb(129 195 206);
+}
+.map svg path:focus{
+  fill: rgb(129 171 179 / 60%);
+}
+.card{
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 14%);
+  padding: 8px 16px;
+}
+.cr span{
+  color: #5a5d5f;
+}
+.cr h3{
+  font-weight: 400;
+}
+.cb{
+  border-top: 1px solid #c5c5c5;
+  padding: 8px 0 6px;
+  font-size: 14px;
+  margin-top: 12px;
+}
+.ago{
+  position: absolute;
+  left: 16px;
+  top: -24px;
+  padding: 24px 28px;
+  border-radius: 5px;
+}
+.ago svg{
+  font-size: 30px;
+}
+.ago svg path{
+  fill: #fff;
+  pointer-events: none;
+}
+.cb svg{
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.gname{
+  padding: 8px 16px 0 118px;
+  position: relative;
+  font-size: 24px;
+}
+.gname span{
+  position: absolute;
+  left: 15px;
+  top: -24px;
+  padding: 20px 30px;
+  border-radius: 5px;
+  background: linear-gradient(60deg, rgb(102, 187, 106), rgb(67, 160, 71));
+  box-shadow: rgb(0 0 0 / 14%) 0px 4px 20px 0px, rgb(76 175 80 / 40%) 0px 7px 10px -5px;
+}
+.gname span svg{
+  margin-top: -6px;
+}
+.gname span svg path{
+  fill: #fff;
+}
+.charto{
+  background: rgb(255, 255, 255);
+  margin: 2rem 0.5rem 0px;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: rgb(0 0 0 / 14%) 0px 1px 4px 0px;
+}
+.charto .ct-chart{
+  background: linear-gradient(60deg, #26c6da, #00acc1);
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(0 172 193 / 40%);
+  padding: 12px;
+  margin: 18px;
+  border-radius: 6px;
+}
+.charto .ct-chart .ct-grids{
+  stroke: #ebecec9c;
+  stroke-dasharray: 3px;
+}
+.charto .ct-chart .ct-series path{
+  fill: none;
+  stroke-width: 3px;
+}
+.charto .ct-chart .ct-series line{
+  stroke-linecap: round;
+  stroke-width: 10px;
+}
+.charto .ct-chart .ct-labels{
+  color: #fff;
+  font-size: 14px;
+}
+.all-card{
+  width: 25%;
+  padding: 8px;
+}
+.tabl{
+  width: 50%;
+}
+.crosss{
+  position: absolute;
+  right: 0;
+  top: 8px;
+  background: #942a2a;
+  font-size: 18px;
+  padding: 4px;
+  height: 24px;
+  width: 24px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: none;
+}
+.nope2{
+  display: none;
+}
+.respmen{
+  width: 280px!important;
+}
+.padddo{
+  padding: 1.5rem;
+}
+.map{
+  padding: 1rem;
+}
+.garea{
+  background: rgb(255, 255, 255);
+  margin: 4rem 0.5rem 0px;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  box-shadow: rgb(0 0 0 / 14%) 0px 1px 4px 0px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+@media only screen and (max-width: 1300px){
+  .cr span {
+    font-size: 14px;
+  }
+  .cr h3{
+    font-size: 20px;
+  }
+  .cb {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 1199px){
+  .all-card {
+    width: 50%;
+    padding: 16px 8px;
+  }
+}
+@media only screen and (max-width: 1023px){
+  .tabl{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px){
+  .afterhead {
+    width: calc(100% - 60px)!important;
+  }
+  .nope1{
+    display: none!important;
+  }
+  .nope2{
+    display: inline-block;
+    padding: 2px 6px;
+  }
+  .nope2 svg {
+    font-size: 14px;
+  }
+  .respmen .rot {
+    line-height: 16px!important;
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+  }
+  .respmen ul .coll .arow {
+    opacity: 1;
+    top: 12px;
+  }
+  .respmen .fono .crosss{
+    display: inline-block;
+  }
+  .padddo{
+    padding: 0.5rem;
+  }
+  .map{
+    padding: 0.3rem;
+  }
+  .head-name {
+    margin-left: 12px;
+    font-size: 16px;
+  }
+  .hds {
+    font-size: 16px;
+  }
+  .dropdown.menu {
+    top: 100px;
+  }
+  .dropdown.menu .dropdown-menu {
+    transform: translate3d(-220px, -62px, 0)!important;
+    width: 200px;
+  }
+  .imgt button {
+    margin: 4px 6px;
+  }
+  .all-card {
+    width: 100%;
+    padding: 24px 8px;
+  }
+  .garea {
+    margin: 2rem 0.5rem 0px;
+  }
+  .gname {
+    padding: 8px 8px 0 100px;
+    font-size: 18px;
+  }
+  .charto {
+    margin: 1rem 0.5rem 0px;
+  }
+  .charto .ct-chart {
+    padding: 8px;
+    margin: 8px;
+  }
+  .charto .ct-chart .ct-labels {
+    font-size: 10px;
+  }
+  .charto .ct-chart .ct-series line {
+    stroke-width: 6px;
+  }
+}
+
+/* dashboard */
+/* chart */
+.ap-c{
+  width: 50%;
+  display: inline-block;
+  padding: 16px;
+}
+.ap-ch{
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 14%);
+  border: 1px solid rgba(0,0,0,.125);
+}
+.ap-ch .ct-chart{
+  padding: 8px;
+}
+.ap-ch .ct-chart svg{
+  stroke: #007eff;
+}
+.ap-ch .barro{
+  position: relative;
+  text-align: center;
+  color: #777777;
+  margin-bottom: 16px;
+}
+.ap-ch .barro span{
+  background: linear-gradient(60deg,#26c6da, #00acc1);
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(0 172 193 / 40%);
+  padding: 16px 20px;
+  border-radius: 6px;
+  position: absolute;
+  left: 16px;
+  top: -24px;
+}
+.ap-ch .barro span svg{
+  fill: #fff;
+  vertical-align: unset;
+}
+.ap-ch .ct-chart svg .ct-grids{
+  stroke: rgba(0,0,0,.2);
+  stroke-dasharray: 2.5px;
+  stroke-width: 1.5px;
+}
+.ap-ch.br .ct-chart svg .ct-series{
+  stroke-width: 6px;
+  stroke-linecap: round;
+}
+.ap-ch .ct-chart svg .ct-series{
+  stroke-width: 2.5px;
+  stroke-linecap: round;
+  fill: none;
+}
+.ap-ch .ct-chart svg .ct-series .ct-point{
+  stroke-width: 12px;
+}
+.ap-ch .ct-chart svg .ct-series-a{
+  stroke: red;
+}
+.ap-ch .ct-chart svg .ct-series-b{
+  stroke: #0400ff;
+}
+.ap-ch .ct-chart svg .ct-labels{
+  color: rgb(123 121 119);
+}
+@media only screen and (max-width: 1199px){
+  .ap-c {
+    width: 100%;
+    padding: 24px 8px;
+  }
+  .ap-ch .barro {
+    font-size: 14px;
+  }
+  .ap-ch .barro span {
+    padding: 12px 16px;
+    left: 12px;
+    top: -20px;
+  }
+  .ap-ch.br .ct-chart svg .ct-series {
+    stroke-width: 2px;
+  }
+}
+
+/* chart */
+/* regularform */
+
+.stan{
+    background: #fff;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 14%);
+    margin: 24px;
+    padding: 12px 24px 24px;
+    border-radius: 6px;
+}
+.stan .st{
+  position: relative;
+  text-align: center;
+  color: #585858;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+.stan .st span{
+  position: absolute;
+  left: 0px;
+  top: -30px;
+  background: linear-gradient(60deg,#ec407a, #d81b60);
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(233 30 99 / 40%);
+  padding: 16px 16px 8px;
+  border-radius: 6px;
+}
+.stan .st span svg{
+  color: #fff;
+  font-size: 20px;
+  vertical-align: text-top;
+}
+.stan form .MuiFormControl-root{
+  width: 100%;
+  margin-bottom: 12px;
+}
+.stan form .MuiCheckbox-colorPrimary.Mui-checked {
+  color: #de2c68;
+}
+.stan form .MuiButton-containedPrimary,
+.stan form .MuiButton-containedPrimary:hover{
+  background-color: #e53471;
+  outline: none;
+}
+.hor label{
+  position: absolute;
+  color: #7575a2;
+}
+.hor .lb1{
+  bottom: 148px;
+}
+.hor .lb2{
+  bottom: 88px;
+}
+.hoor form .MuiTextField-root{
+  margin-bottom: 28px;
+}
+@media only screen and (max-width: 1023px){
+  .stan{
+    padding: 12px 12px 24px;
+    margin: 30px 12px;
+  }
+  .stan .st {
+    font-size: 14px;
+  }
+  .hor label,
+  .stan form .MuiInputLabel-root{
+    font-size: 12px;
+  }
+  .hor .lb2 {
+    bottom: 94px;
+  }
+  .hor .lb1 {
+    bottom: 152px;
+  }
+}
+
+/* regularform */
+/* extendedform */
+
+.exo{
+  padding: 12px;
+}
+.exo .ee{
+  padding: 12px;
+}
+.datto,
+.dattoo{
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 14%);
+  background: #fff;
+  border-radius: 6px;
+  padding: 12px;
+}
+.datto div{
+  position: relative;
+  color: #6d6c6c;
+  text-align: center;
+}
+.datto div span{
+  position: absolute;
+  left: 0;
+  top: -30px;
+  padding: 16px 16px 12px;
+  border-radius: 6px;
+  background: linear-gradient(60deg,#ec407a, #d81b60);
+  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(233 30 99 / 40%)
+}
+.datto div span svg{
+  vertical-align: text-top;
+  color: #fff;
+  font-size: 20px;
+}
+.datto form .MuiTextField-root{
+  width: 100%;
+}
+.fs{
+  width: 50%;
+  display: inline-block;
+  padding: 12px;
+}
+.fs .MuiFormControl-root{
+  width: 100%;
+}
+@media only screen and (max-width: 1199px){
+  .datto,
+  .dattoo {
+    padding: 8px;
+  }
+  .datto div {
+    font-size: 14px;
+  }
+  .datto div span {
+    left: -2px;
+    top: -24px;
+    padding: 12px 12px 12px;
+  }
+  .fs {
+    padding: 6px;
+  }
+}
+@media only screen and (max-width: 991px){
+  .exo {
+    padding: 12px 0;
+  }
+  .fs {
+    padding: 6px 0;
+    width: 100%;
+  }
+}
+
+/* extendedform */
+/* loginform */
+
+.logform{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logform form{
+  width: 325px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 0 17px #ccc;
+  border-radius: 8px;
+  padding: 24px;
+}
+.logform form .MuiFormControl-root {
+  width: 100%;
+}
+.MuiButton-containedPrimary {
+  outline: 0!important;
+}
+@media only screen and (max-width: 575px){
+  .logform {
+    margin-top: 16px;
+  }
+  .logform form {
+    width: 200px;
+    padding: 12px;
+  }
+}
+/* loginform */
