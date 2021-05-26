@@ -1,0 +1,150 @@
+{
+  "login": [
+    {
+      "name": "Moiz",
+      "password": "m14021996z"
+    }
+  ],
+  "chartdata": [
+    {
+      "labels": [
+        "M",
+        "T",
+        "W",
+        "T",
+        "F",
+        "S",
+        "S"
+      ],
+      "series": [
+        [
+          12,
+          17,
+          7,
+          17,
+          23,
+          18,
+          38
+        ],
+        [
+          11,
+          27,
+          10,
+          15,
+          43,
+          8,
+          30
+        ]
+      ]
+    }
+  ],
+  "chartdata1": [
+    {
+      "labels": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "series": [
+        [
+          2,
+          27,
+          17,
+          120,
+          223,
+          180,
+          138,
+          341,
+          423,
+          221,
+          412,
+          123
+        ],
+        [
+          123,
+          234,
+          435,
+          312,
+          99,
+          111,
+          127,
+          130,
+          155,
+          463,
+          48,
+          430
+        ],
+        [
+          244,
+          432,
+          333,
+          321,
+          112,
+          25,
+          411,
+          327,
+          210,
+          115,
+          143,
+          118
+        ]
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "weqwe",
+      "postId": "afdas"
+    },
+    {
+      "id": "2",
+      "body": "dsa",
+      "postId": "dsa"
+    },
+    {
+      "id": "3",
+      "body": "nvnb",
+      "postId": "vvc"
+    },
+    {
+      "id": "4",
+      "body": "dfgs",
+      "postId": "vbbn"
+    },
+    {
+      "id": "5",
+      "body": "ad",
+      "postId": "asd"
+    },
+    {
+      "id": "6",
+      "body": "sf",
+      "postId": "dad"
+    },
+    {
+      "id": "7",
+      "body": "sfda",
+      "postId": "xcv"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

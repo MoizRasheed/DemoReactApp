@@ -49,7 +49,7 @@ const Extendedform = () => {
     return (
         <>
         {/* <Header /> */}
-        <div>
+        <div className="extform">
             <div className="col-12 col-lg-4 d-inline-block ee">
                 <div className="datto">
                     <div><span><CgCalendarDates /></span>Date Picker</div>

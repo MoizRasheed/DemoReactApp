@@ -165,7 +165,7 @@ const Header = () => {
   //   "display": `${disp8}`
   // }
   const [state, dispatch] = useReducer(reducer, initialState)
-  console.log("state value:",state)
+  // console.log("state value:",state)
   return (
     <>
       <div id="back-img" style={stylemenu} className={`back-img ${std} ${respmen}`}>

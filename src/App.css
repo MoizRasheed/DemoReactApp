@@ -710,6 +710,7 @@
   background: #fff;
   border-radius: 6px;
   padding: 12px;
+  text-align: center;
 }
 .datto div{
   position: relative;
@@ -802,3 +803,79 @@
   }
 }
 /* loginform */
+/* extended form */
+
+.extform{
+  padding: 12px 24px;
+}
+.extform .ee{
+  padding: 12px;
+}
+.extform .ee .dattoo img{
+  width: 175px;
+  height: 175px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 767px){
+  .extform{
+    padding: 12px 6px;
+  }
+}
+
+/* extended form */
+/* map */
+
+.mpp{
+  padding: 12px 24px;
+}
+@media only screen and (max-width: 767px){
+  .mpp{
+    padding: 12px;
+  }
+}
+
+/* map */
+/* tables */
+
+.tabb{
+  padding: 12px 24px;
+}
+.ttbbt .MuiTableCell-root{
+  text-align: center;
+}
+.ttbbt .MuiTableCell-head {
+  font-weight: 600;
+  font-size: 16px;
+}
+.adddataform .MuiTextField-root{
+  margin-bottom: 16px;
+}
+.upod .MuiFormControl-root {
+  width: 100%;
+}
+.upod .MuiInputLabel-shrink {
+  transform: translate(0, 16px) scale(0.75);
+}
+.upod label + .MuiInput-formControl {
+  margin-top: 30px;
+}
+@media only screen and (max-width: 767px){
+  .tabb{
+    padding: 12px;
+  }
+  .abmod{
+    top: 50%!important;
+    left: 50%!important;
+    transform: translate(-50%, -50%)!important;
+    width: 275px!important;
+  }
+  .modal-open .modal {
+    padding: 16px!important;
+  }
+  .delupbtn {
+    margin: 4px!important;
+  }
+}
+
+/* tables */

@@ -59,7 +59,7 @@ const Map = () => {
     return (
       <>
         {/* <Header /> */}
-        <div>
+        <div className="mpp">
         <MyMapComponent isMarkerShown />
         </div>
       </>

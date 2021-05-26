@@ -215,17 +215,17 @@ const Tables = () => {
       setOpen(false);
     };
     const body = (
-      <div style={modalStyle} className={classes.paper}>
-        <form id="myForm" autoComplete="off" onSubmit={(evt)=>poso(evt)}>
-      <div className="modal-body">
-  <TextField required id="outlined-basic" label="Body" variant="outlined" onChange={(e)=>{data.body=e.target.value}}/>
-  <TextField required id="outlined-basic" label="Post ID" variant="outlined" onChange={(e)=>{data.postId=e.target.value}}/>
-  <TextField required id="outlined-basic" label="Id" variant="outlined" onChange={(e)=>{data.id=e.target.value}}/>
+      <div style={modalStyle} className={`abmod ${classes.paper}`}>
+        <form className="text-center" id="myForm" autoComplete="off" onSubmit={(evt)=>poso(evt)}>
+      <div className="adddataform">
+  <TextField required id="outlined-basic" placeholder="Body" variant="outlined" onChange={(e)=>{data.body=e.target.value}}/>
+  <TextField required id="outlined-basic" placeholder="Post ID" variant="outlined" onChange={(e)=>{data.postId=e.target.value}}/>
+  <TextField required id="outlined-basic" placeholder="Id" variant="outlined" onChange={(e)=>{data.id=e.target.value}}/>
   {/* <TextField required id="outlined-basic" label="Age" variant="outlined" onChange={(e)=>{data.age=e.target.value}}/> */}
       </div>
-      <div className="modal-footer">
-        <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" className="btn btn-primary">Save changes</button>
+      <div className="">
+        <button type="button" className="btn btn-secondary" data-dismiss="modal" onClick={handleClose}>Close</button>
+        <button type="submit" className="btn btn-primary ml-2">Save changes</button>
       </div>
       </form>
       </div>
@@ -234,8 +234,8 @@ const Tables = () => {
     return (
         <>
         {/* <Header /> */}
-        <div>
-        <div><Button color="primary" variant="contained" type="button" onClick={handleOpen}>Add Data</Button></div>
+        <div className="tabb">
+        <div className="text-right mb-3"><Button color="primary" variant="contained" type="button" onClick={handleOpen}>Add Data</Button></div>
         <Modal
         open={open}
         onClose={handleClose}
@@ -270,7 +270,7 @@ const Tables = () => {
   </div>
 </div> */}
             <TableContainer component={Paper}>
-      <Table aria-label="simple table">
+      <Table aria-label="simple table" className="ttbbt">
         <TableHead>
           <TableRow>
           <TableCell>ID</TableCell>
@@ -302,10 +302,10 @@ const Tables = () => {
               </TableCell> */}
               <TableCell>
               <Tooltip title="Update" placement="top">
-                <Button data-toggle="modal" data-target="#myModal" color="primary" variant="contained" onClick={()=>{setupd(res.id);setupdate(res.id);setupdate1(res.body);setupdate2(res.postId)}}>Edit</Button>
+                <Button className="mr-2 delupbtn" data-toggle="modal" data-target="#myModal" color="primary" variant="contained" onClick={()=>{setupd(res.id);setupdate(res.id);setupdate1(res.body);setupdate2(res.postId)}}>Edit</Button>
               </Tooltip>
               <Tooltip title="Delete" placement="bottom-end">
-                <Button color="secondary" variant="contained" onClick={()=>{deleted(res.id)}}>Delete</Button>
+                <Button className="delupbtn" color="secondary" variant="contained" onClick={()=>{deleted(res.id)}}>Delete</Button>
               </Tooltip>
               </TableCell>
             </TableRow>
@@ -319,10 +319,10 @@ const Tables = () => {
       <div className="modal-content">
         <div className="modal-header">
           <button type="button" className="close" data-dismiss="modal">&times;</button>
-          <h4 className="modal-title">Modal Header</h4>
+          {/* <h4 className="modal-title">Modal Header</h4> */}
         </div>
         <form onSubmit={(evt)=>{upo(evt)}}>
-        <div className="modal-body">
+        <div className="modal-body upod">
           <FormControl>
             <InputLabel>Id</InputLabel>
             <Input value={update} onChange={(e)=>{setupdate(e.target.value)}} />

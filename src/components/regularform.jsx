@@ -22,9 +22,13 @@ import { BiDotsHorizontalRounded } from "react-icons/bi";
 // }))
 const Regularform = () => {
     const [st,setst]=useState({check1:false,check2:false})
-    const [err,seterr]=useState("We'll never share your email")
+    const [err,seterr]=useState("")
     const fun=(evt)=>{
-        if(evt.target.value.length<5){
+        console.log(evt.target)
+        if(evt.target.value===""){
+            seterr("enter email")
+        }
+        else if(evt.target.value.length<5){
             seterr("add min 6 no")
         }
         else{
